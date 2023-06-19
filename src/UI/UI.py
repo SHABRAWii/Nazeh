@@ -35,9 +35,9 @@ def Update_computerVision(ID):
         if ID not in Total_Attendance_List and ID in cared_List:
             Total_Attendance_count += 1
             Total_Attendance_List.append(ID)
-        Barcode.change_status(Total_Attendance_count, card_cout, computer_vision_count)
-        solveIssues.change_status(Total_Attendance_count, card_cout, computer_vision_count)
-        Finish.change_status(Total_Attendance_count, card_cout, computer_vision_count)
+        Barcode.change_status(Total_Attendance_count, computer_vision_count, card_cout)
+        solveIssues.change_status(Total_Attendance_count, computer_vision_count, card_cout)
+        Finish.change_status(Total_Attendance_count, computer_vision_count, card_cout)
 
     pass
 def readBarcode(ID):
